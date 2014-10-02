@@ -1,0 +1,101 @@
+/* This is the style sheet for BubbleUnder.com */
+
+
+/*BACK GROUND AND FONTS*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("River_1.jpg"); /*Merrimack River Lowell image taken by me*/
+  line-height: 1.25;
+  padding: 15px;
+}
+/*END BACK GROUND AND FONTS*/
+
+/*HEADERS*/
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  font-size: medium;
+  font-weight: normal;
+}
+/*END HEADERS*/
+
+/*defualt paragraph font/color*/
+p {
+  font-size: small;
+  color: black;
+}
+/*END defualt paragraph font/color*/
+
+/*Student at University of Massachusetts Lowell 
+Computer Science Undergraduate STYLE*/
+#tagline p {
+  color: #ffffff;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+}
+/*END Student at University of Massachusetts Lowell 
+Computer Science Undergraduate STYLE*/
+
+/*GREETINGS BOX STYLE*/
+#Greeting {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 300px;
+    border-radius: 25px;
+}
+/*END GREETINGS BOX STYLE*/
+
+
+/*STYLES FOR LINKS*/
+a:link, a:visited {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: navy;
+}
+
+a:active {
+  color: aqua;
+  background-color: navy;
+}
+/*END STYLES FOR LINKS*/
+
+/*STYLES FOR NAVIGATION MENU*/
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a { 
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: grey;
+}
+/*END STYLES FOR NAVIGATION MENU*/
+
+/*TABLE STYLE*/
+table{
+   width:100%;
+}

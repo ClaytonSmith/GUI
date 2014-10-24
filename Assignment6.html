@@ -60,7 +60,8 @@ updated by  MSM on October 24, 2014 at 12:50 AM
             <!-- INPUT X VALUES form-->
             <h2>Input X values</h2>
             <form id="InX" action="javascript:void(0)">	
-                <input type="text" id="t2" size="5" tabindex="1" />
+                <input type="number" name="X Value" id="t2"
+                    min="-256" max="255" step="1" value="0"/>
                 <input type="submit" value="Input X" tabindex="2" />
             </form>
             <!--X Values Output-->
@@ -69,7 +70,8 @@ updated by  MSM on October 24, 2014 at 12:50 AM
             <!-- INPUT Y VALUES form-->            
             <h2>Input Y values</h2>
             <form id="InY" action="javascript:void(0)">	
-                <input type="text" id="t3" size="5" tabindex="1" />
+                <input type="number" name="Y Value" id="t3"
+                    min="-256" max="255" step="1" value="0"/>                
                 <input type="submit" value="Input Y" tabindex="2" />
             </form>
             <!--Y Values Output-->

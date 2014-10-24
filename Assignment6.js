@@ -19,17 +19,15 @@ $(document).ready(function() {
         
         //when an x value is inputed push value to x array
 	$("#InX").submit(function() {
-            xvalues[x]=(this.t2.value);
+            xvalues.push(this.t2.value);
             $("#XValuesArea").html(""+xvalues);
-            //$(this).append("<p style=\"background: blue\">"+xvalues[x]+"</p>");
-            x++;               
+            //$(this).append("<p style=\"background: blue\">"+xvalues[x]+"</p>");             
 	});
 
         //when a y value is inputed push value to y array
 	$("#InY").submit(function() {
-            yvalues[y]=(this.t3.value);
-            $("#YValuesArea").html(""+yvalues);
-            y++;                
+            yvalues.push(this.t3.value);
+            $("#YValuesArea").html(""+yvalues);             
 	});
         
         //when the reset button is pressed clear the arrays and reset the indexes and the tab

@@ -1,4 +1,10 @@
-/* This is the style sheet for BubbleUnder.com */
+/* File:  MyFirstWebLabWebsite "style1.css"
+  91.461 Assignment 3:  Styling Your First Web Page With CSS
+  Mark S McGrotty, UMass Lowell Computer Science, mmcgrott@cs.uml.edu
+  Copyright (c) 2014 by Mark McGrotty.  All rights reserved.  May be freely 
+    copied or excerpted for educational purposes with credit to the author.
+  updated by  MSM on September 23, 2014 at 6:00 PM
+*/
 
 
 /*BACK GROUND AND FONTS*/
@@ -42,6 +48,16 @@ Computer Science Undergraduate STYLE*/
 
 /*GREETINGS BOX STYLE*/
 #Greeting {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 300px;
+    border-radius: 25px;
+}
+/*END GREETINGS BOX STYLE*/
+
+/*GREETINGS BOX STYLE*/
+#Format_Text {
     border: 2px solid #a1a1a1;
     padding: 10px 40px; 
     background: #b7aa87;

@@ -6,6 +6,46 @@
   updated by  MSM on September 23, 2014 at 6:00 PM
 */
 
+
+/*TABLE STYLES*/
+td{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+tr{
+    width: 50px;
+    width: 100%;
+}
+
+
+tr:nth-child(1) {
+    background: #a9974e;
+
+}
+
+tr:nth-child(1) > td:nth-child(1){
+    background: #b7aa87;
+
+
+}
+td:nth-child(1) {
+    background: #a9974e;
+
+
+}
+
+table{
+    background: #b7aa87;
+    border: 1px solid black;
+    color: whitesmoke;
+    width:100%;
+
+}
+/*END TABLE STYLES*/
+
+
 /*BACK GROUND AND FONTS*/
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -50,10 +90,40 @@ Computer Science Undergraduate STYLE*/
     border: 2px solid #a1a1a1;
     padding: 10px 40px; 
     background: #b7aa87;
-    width: 300px;
+    width: 400px;
     border-radius: 25px;
 }
 /*END GREETINGS BOX STYLE*/
+
+/*ASSIGNMENT BOX STYLE*/
+#Format_Text {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 500px;
+    border-radius: 25px;
+}
+/*END ASSIGNMENT BOX STYLE*/
+
+/*BACKUPS BOX STYLE*/
+#BackUps {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 500px;
+    border-radius: 25px;
+}
+/*BACKUPS BOX STYLE*/
+
+/*TABLE INPUT STYLE*/
+#times_table {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 500px;
+    border-radius: 25px;
+}
+/*END TABLE INPUT BOX STYLE*/
 
 
 /*STYLES FOR LINKS*/
@@ -100,7 +170,16 @@ ul#menu li a:hover {
 }
 /*END STYLES FOR NAVIGATION MENU*/
 
-/*TABLE STYLE*/
-table{
-   width:100%;
+/* Assigment Json file properties */
+.AssignmentNumber, .AssignemtName, .Professor, .DateDue {
+  font-family: Helvetica, Arial, sans-serif ;
+  color: black ;
+  background-color: #b7aa87;
+  margin: 0 0 0 0 ;
 }
+
+.Professor{
+    font-style: italic;
+}
+/*End Assigment Json file properties*/
+

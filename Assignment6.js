@@ -19,7 +19,7 @@ $(document).ready(function() {
 	});
         
 	$("#InY").submit(function() {
-            yvalues[y]=(this.t2.value);
+            yvalues[y]=(this.t3.value);
             $("#YValuesArea").html(""+yvalues);
             y++;                
 	});

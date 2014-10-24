@@ -7,15 +7,13 @@
 
 
 //global variables for multiplication table
+
 var xvalues = []; //x values array
 var yvalues = []; //y values array
 var x =0; //x values index
 var y =0; //y values index
 
-
-
-
-
+//functions for buttons
 $(document).ready(function() {
 	console.log("this is a test");
         
@@ -34,7 +32,7 @@ $(document).ready(function() {
             y++;                
 	});
         
-        //when the reset button is pressed clear the arrays and reset the indexes and the table
+        //when the reset button is pressed clear the arrays and reset the indexes and the tab
         $("#Reset").submit(function(){
             xvalues.length = 0;
             yvalues.length = 0;
@@ -54,15 +52,12 @@ $(document).ready(function() {
 ;    
 });
 
-
-
-
 //I based my code off this snippet from Cerbus on stackoverflow
 //http://stackoverflow.com/questions/14643617/create-table-using-javascript
 function tableCreate(){
     var tableareadiv = document.tablearea,
     tbl  = document.createElement('table');
-    tbl.style.width='100px';
+ 
 
     for(var i = 0; i <= yvalues.length; i++){//loop through rows
         

@@ -1,0 +1,34 @@
+  {
+    "AssignmentNumber" : "Assignment No.5" ,
+    "AssignemtName" : "Formatting Dynamic Text" ,
+    "DateDue" : "Tuesday, October 7, 2014" ,
+    "Professor" : "Jesse M. Heines",
+    "text" : {
+      "paragraphs": [
+        [
+          "This assignment involves formatting text, which is mainly covered in Chapter 6 of CSS3: The Missing Manual by David Sawyer MacFarland (both the 2nd & 3rd editions).",
+          "However, the assignment includes a twist: the text you are to format will be read from a data structure, not hard-coded within your HTML pages."
+        ],
+        [
+          "The data structure we will use is JSON, which is introduced on pages 370-373 of JavaScript & jQuery: The Missing Manual, which is also by David Sawyer MacFarland.",
+          " That introduction involves Ajax, which is beyond the scope of this assignment, as do most of the references and tutorials that you can easily find on the web with a Google search.",
+          "It is altogether fitting and proper that we should do this.",
+          "Were going to use JSON in this assignment much more simply than that, although, as always, students who are familiar with JSON are welcome to use more advanced techniques if they like.",
+          "Wikipedia has a good, simple introduction to basic JSON syntax at http://en.wikipedia.org/wiki/Json.",
+          "You need only be concerned with the sections 1 and 2 of this article, which I have provided as a PDF attached to this write-up.",
+          " Patrick Hunlock has also written a nice, clear introduction to JSON in his blog post of April 10, 2007.",
+          "Again, you need only be concerned with the first part of this post, which I have also attached as a PDF."
+          
+        ],
+        [
+          "The use of JSON also requires a bit of JavaScript, which we havent covered yet, either.",
+          "But again, we will only use a few very basic techniques to illustrate the fact that CSS can be applied to dynamic as well as static text.",
+          "This is the critical lesson to take away from this assignment.  As often requested, you can see my rudimentary solution to this assignment here.",
+          "Please note that my solution is not meant to be complete.  There is always much more that you can do."
+        ] ,
+        [
+          "As usual, we will spend class time to go over everything you need to know to use JSON and JavaScript in this assignment."
+        ]
+      ]
+    }
+  }

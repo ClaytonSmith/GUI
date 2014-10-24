@@ -1,0 +1,34 @@
+
+
+
+td{
+    height: 50px;
+    text-align: center;
+}
+
+
+tr:nth-child(1) {
+    background: crimson;
+
+}
+
+tr:nth-child(1) > td:nth-child(1){
+    background: #e37a00;
+
+
+}
+td:nth-child(1) {
+    background: orangered;
+
+
+}
+
+
+
+table{
+    background: #3d5252;
+    border: 1px red;
+    color: whitesmoke;
+    width:100%;
+
+}

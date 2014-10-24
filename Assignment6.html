@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 
 <!--
-File:  10_16_2014 "10_16_2014.html"
-91.461: testing selectors
+File:  Assignment 6 "Assignment6.html"
+91.461: Creating an Interactive Dynamic Table
 Mark S McGrotty, UMass Lowell Computer Science, mmcgrott@cs.uml.edu
 Copyright (c) 2014 by Mark McGrotty.  All rights reserved.  May be freely 
 copied or excerpted for educational purposes with credit to the author.
-updated by  MSM on September 11, 2014 at 5:00 PM
+updated by  MSM on October 24, 2014 at 12:50 AM
 -->
 
 
 
 <html lang="en">
 
+    <!--start head-->
     <head>
         <meta charset="utf-8">
         <link href="css/style1.css" rel="stylesheet" type="text/css">
@@ -20,21 +21,22 @@ updated by  MSM on September 11, 2014 at 5:00 PM
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="Assignment6.js"></script>
     </head>
-
+    <!--end head-->    
+    
     <body>    
         <div id="header"><!--Start Header div-->
 
-        <div id="sitebranding">
-            <h1>Mark McGrotty's Web Site</h1>
-        </div>
+            <div id="sitebranding">
+                <h1>Mark McGrotty's Web Site</h1>
+            </div>
 
-        <div id="tagline"><!--start tagline div-->
-            <p>
-            Student at University of Massachusetts Lowell
-            <br>
-            <em>Computer Science Undergraduate</em>
-            </p>
-        </div><!-- end tagline div-->
+            <div id="tagline"><!--start tagline div-->
+                <p>
+                Student at University of Massachusetts Lowell
+                <br>
+                <em>Computer Science Undergraduate</em>
+                </p>
+            </div><!-- end tagline div-->
 
         </div> <!-- End of Header div -->
 
@@ -49,6 +51,7 @@ updated by  MSM on September 11, 2014 at 5:00 PM
             </ul>
 
         </div><!-- End of navigation -->      
+        
         <!-- input matrix values -->
         <div id="times_table">
             
@@ -56,7 +59,7 @@ updated by  MSM on September 11, 2014 at 5:00 PM
             <h2>Input X values</h2>
             <form id="InX" action="javascript:void(0)">	
                 <input type="text" id="t2" size="5" tabindex="1" />
-                <input type="submit" value="Check Input" tabindex="2" />
+                <input type="submit" value="Input X" tabindex="2" />
             </form>
             <!--X Values Output-->
             <p id="XValuesArea"></p>
@@ -65,7 +68,7 @@ updated by  MSM on September 11, 2014 at 5:00 PM
             <h2>Input Y values</h2>
             <form id="InY" action="javascript:void(0)">	
                 <input type="text" id="t3" size="5" tabindex="1" />
-                <input type="submit" value="Check Input" tabindex="2" />
+                <input type="submit" value="Input Y" tabindex="2" />
             </form>
             <!--Y Values Output-->
             <p id="YValuesArea"></p>

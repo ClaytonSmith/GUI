@@ -3,9 +3,13 @@
   Mark S McGrotty, UMass Lowell Computer Science, mmcgrott@cs.uml.edu
   Copyright (c) 2014 by Mark McGrotty.  All rights reserved.  May be freely 
     copied or excerpted for educational purposes with credit to the author.
-  updated by  MSM on September 23, 2014 at 6:00 PM
+  updated by  MSM on October 24, 2014 at 12:50 AM
 */
 
+/* to display the generate and reset buttons on the same line*/
+form{
+    display: inline;
+}
 
 /*TABLE STYLES*/
 td{
@@ -16,7 +20,6 @@ td{
 
 tr{
     width: 50px;
-    width: 100%;
 }
 
 
@@ -41,6 +44,8 @@ table{
     border: 1px solid black;
     color: whitesmoke;
     width:100%;
+    border-width: 5px;
+    padding: 10px;
 
 }
 /*END TABLE STYLES*/

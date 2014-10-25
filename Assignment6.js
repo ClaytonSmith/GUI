@@ -45,7 +45,7 @@ $(document).ready(function() {
         //when generate is pressed clear old table and create new table
         $("#GenTable").submit(function() {
            $("#tablearea").html("");   
-           $("#tablearea").innerHTML(tableCreate());        
+           $("#tablearea").html(tableCreate());        
         });
 ;    
 });
@@ -53,7 +53,7 @@ $(document).ready(function() {
 //I based my code off this snippet from Cerbus on stackoverflow
 //http://stackoverflow.com/questions/14643617/create-table-using-javascript
 function tableCreate(){
-    var tableareadiv = document.tablearea,
+    var tableareadiv = document.getElementById("tablearea");    
     tbl  = document.createElement('table');
  
 
@@ -87,5 +87,5 @@ function tableCreate(){
             
         }
     }
-    tablearea.appendChild(tbl);
+    tableareadiv.appendChild(tbl);
 }

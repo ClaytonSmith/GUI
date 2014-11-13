@@ -1,0 +1,20 @@
+  {
+    "AssignmentNumber" : "Assignment No. 3" ,
+    "AssignemtName" : "Styling Your First Web Page With CSS" ,
+    "DateDue" : "Tuesday, September 23, 2014" ,
+    "Professor" : "Jesse M. Heines",
+    "text" : {
+      "paragraphs": [
+        [
+          "This assignment builds on Assignment No. 2.  You are to enhance that page with additional HTML techniques and apply CSS to your HTML to give your page some basic styling."
+        ],
+        [
+          "Information relevant to this assignment appears in CSS: The Missing Manual by David Sawyer MacFarland in Chapters 1-3 and 6.  We obviously can’t cover all that material in class before the assignment’s due date, but by reading these chapters and looking at examples on the W3Schools website, specifialy the tutorials at www.w3schools.com/css and www.w3schools.com/css3 you should be able to fulfill the assignments requirements."
+          
+        ],
+        [
+          "You will not have time to do all the reading and watch all the videos before this assignment is due, so I have provided some guidelines in the next section to help you plan your time."
+        ] 
+      ]
+    }
+  }

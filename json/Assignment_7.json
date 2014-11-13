@@ -1,0 +1,17 @@
+  {
+    "AssignmentNumber" : "Assignment No. 7" ,
+    "AssignemtName" : "Creating a Single-Page Navigation Interface" ,
+    "DateDue" : "Thursday, November 6, 2014" ,
+    "Professor" : "Jesse M. Heines",
+    "text" : {
+      "paragraphs": [
+        [
+          "This assignment is a continuation of the theme of single page web applications that we began in the previous assignment and is based on T.A. Curran Kelleher's presentation in class on Thursday, October 30, 2014.  You are to implement a navigation bar such that the main page displays blog posts, and the other pages display partial HTML fragments that each reside in their own file.  For example, file assignments.html will no longer contain the outer <html> tag, but instead will only contain the contents of the assignments page.  In response to users clicking on a navigation bar link (such as Assignments), the partial HTML file will be loaded dynamically using AJAX and set as the innerHTML of the container div."
+        ],
+        [
+          "The content of the page is up to you, but it should not be simply placeholder content such as the lorem ipsum text.  Your page should have a clear theme or purpose.  It could be a re-implementation of your existing site (Home, About, Assignments, etc.), or it could also be something completely different.  For example, Ian Wixon's brewery site is perfect for updating to meet the requirements of this assignment. Whatever the theme, your page must have navigation implemented as described in class, that is, using hash URL fragments and having partial HTML pages residing in separate files."
+          
+        ]
+      ]
+    }
+  }

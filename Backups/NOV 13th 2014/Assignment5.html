@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formatting Dynamic Text Demonstration</title>
+
+    <link type="text/css" rel="stylesheet" href="css/style1.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!-- load the JSON file containing the Assignment Details -->
+    <script type="text/javascript">
+      var story;
+
+      jQuery.ajax({
+        async: false,
+        dataType: "json",
+        url: "jsontest.json" ,
+        success: function( data ) {
+          story = data ;
+        }
+      });
+      
+      jQuery(document).ready( function() {
+        placeContent() ;
+      } ) ;
+    </script>
+  
+    <!-- Determine client browser and print accordingly -->
+    <script type="text/javascript">
+      var strFirstParaClass = "" ;
+      var strNavString = navigator.userAgent ;
+      // console.log( navigator.userAgent ) ;
+      // console.log( strNavString ) ;
+      if ( strNavString.indexOf( "Firefox" ) !== -1 ) {
+        strFirstParaClass = "Firefox" ;
+      } else if ( strNavString.indexOf( "Chrome" ) !== -1 ) {
+        strFirstParaClass = "Chrome" ;
+      } else if ( strNavString.indexOf( "Safari" ) !== -1 ) {
+        strFirstParaClass = "Safari" ;
+      }
+    </script>
+  
+    <script type="text/javascript">
+      // N.B.  This version *does* apply the CSS.
+      function placeContent() {
+        var strContent = "";
+  
+        // create dynamic content from JSON
+        strContent += "<h1 class='AssignmentNumber'>" + story.AssignmentNumber + "</h1>" ;
+        strContent += "<h2 class='AssignemtName'>" + story.AssignemtName + "</h2>" ;
+        strContent += "<h2 class='DateDue'>" + story.DateDue + "</h2>" ;
+        strContent += "<h3 class='Professor'>Assigned by: " + story.Professor + "</h3>" ;
+
+  
+        // loop through all the paragraphs and sentences
+        for ( var para = 0 ; para < story.text.paragraphs.length ; para++ ) {
+          strContent += "<p class=\"" + strFirstParaClass + "\">" ;
+          for ( var sent = 0 ; sent < story.text.paragraphs[para].length ; sent++ ) {
+            strContent += story.text.paragraphs[para][sent] + "&nbsp; " ;
+          }
+          strContent += "</p>" ;
+        }
+  
+        // place dynamic content on page
+        // document.getElementById( "content" ).innerHTML = strContent ;
+        jQuery("#content").html( strContent ) ;
+      }
+  
+      // N.B.  This version does *NOT* apply the CSS!
+      function placeContent2() {
+        document.writeln( "<h1 class='AssignmentNumber'>" + story.AssignmentNumber + "</h1>" ) ;
+        document.writeln( "<h2 class='AssignemtName'>" + story.AssignemtName + "</h2>" ) ;
+        document.writeln( "<h2 class='DateDue'>" + story.DateDue + "</h2>" ) ;
+        document.writeln( "<h3 class='Professor'Assigned by: " + story.Professor + "</h3>" ) ;
+  
+        for ( var para = 0 ; para < story.text.paragraphs.length ; para++ ) {
+          document.writeln( "<p>" ) ;
+          for ( var sent = 0 ; sent < story.text.paragraphs[para].length ; sent++ ) {
+            document.writeln( story.text.paragraphs[para][sent] + "&nbsp; " ) ;
+          }
+          document.writeln( "</p>" ) ;
+        }
+      }
+    </script>
+  </head>
+  
+  <body>      
+      
+    <!-- static content -->
+    <div id="header"><!--Start Header div-->
+    
+      <div id="sitebranding">
+        <h1>Mark McGrotty's Web Site</h1>
+      </div>
+
+      <div id="tagline"><!--start tagline div-->
+        <p>
+        Student at University of Massachusetts Lowell
+        <br>
+        <em>Computer Science Undergraduate</em>
+        </p>
+      </div><!-- end tagline div-->
+
+    </div> <!-- End of Header div -->
+    
+    <div id="navigation"><!-- Start of navigation -->
+    
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html"> Projects &AMP; Assignments</a></li>
+        <li><a href="Misc.html">Misc</a></li>
+        <li><a href="Assignment5.html">Assignment 5</a></li>
+        <li><a href="Assignment6.html">Assignment 6</a></li>        
+      </ul>
+    
+    </div><!-- End of navigation -->    
+   
+    <!-- dynamic content -->
+    <div id="Format_Text"><!--BOX for dynamic content-->
+    <div id="content"></div>
+    </div><!--END BOX-->
+    
+  </body>
+</html>
+  

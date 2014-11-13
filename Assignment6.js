@@ -17,6 +17,8 @@ var y =0; //y values index
 $(document).ready(function() {
 	console.log("this is a test");
         
+        
+        
         //when an x value is inputed push value to x array
 	$("#InX").submit(function() {
             xvalues.push(this.t2.value);

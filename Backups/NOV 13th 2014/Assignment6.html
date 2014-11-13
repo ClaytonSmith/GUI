@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+File:  Assignment 6 "Assignment6.html"
+91.461: Creating an Interactive Dynamic Table
+Mark S McGrotty, UMass Lowell Computer Science, mmcgrott@cs.uml.edu
+Copyright (c) 2014 by Mark McGrotty.  All rights reserved.  May be freely 
+copied or excerpted for educational purposes with credit to the author.
+updated by  MSM on October 24, 2014 at 12:50 AM
+-->
+
+
+
+<html lang="en">
+
+    <!--start head-->
+    <head>
+        <meta charset="utf-8">
+        <link href="css/style1.css" rel="stylesheet" type="text/css">
+        <title>Assignment 6</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="Assignment6.js"></script>
+    </head>
+    <!--end head-->    
+    
+    <body>    
+        <div id="header"><!--Start Header div-->
+
+            <div id="sitebranding">
+                <h1>Mark McGrotty's Web Site</h1>
+            </div>
+
+            <div id="tagline"><!--start tagline div-->
+                <p>
+                Student at University of Massachusetts Lowell
+                <br>
+                <em>Computer Science Undergraduate</em>
+                </p>
+            </div><!-- end tagline div-->
+
+        </div> <!-- End of Header div -->
+
+        <div id="navigation"><!-- Start of navigation -->
+
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> Projects &AMP; Assignments</a></li>
+                <li><a href="Misc.html">Misc</a></li>
+                <li><a href="Assignment5.html">Assignment 5</a></li>
+                <li><a href="Assignment6.html">Assignment 6</a></li>
+            </ul>
+
+        </div><!-- End of navigation -->      
+        
+        <!-- input matrix values -->
+        <div id="times_table">
+            
+            <h3>MULTIPLICATION TABLE</h3>
+            
+            <!-- INPUT X VALUES form-->
+            <h2>Input X values</h2>
+            <form id="InX" action="javascript:void(0)">	
+                <input type="number" name="X Value" id="t2"
+                    min="-256" max="255" step="1" value="0"/>
+                <input type="submit" value="Input X" tabindex="2" />
+            </form>
+            <!--X Values Output-->
+            <p id="XValuesArea"></p>
+
+            <!-- INPUT Y VALUES form-->            
+            <h2>Input Y values</h2>
+            <form id="InY" action="javascript:void(0)">	
+                <input type="number" name="Y Value" id="t3"
+                    min="-256" max="255" step="1" value="0"/>                
+                <input type="submit" value="Input Y" tabindex="2" />
+            </form>
+            <!--Y Values Output-->
+            <p id="YValuesArea"></p>
+
+            <!--GENERATE TABLE BUTTON-->
+            <form id="GenTable" action="javascript:void(0)">	
+                <input type="submit" value="Generate" tabindex="2" />
+            </form>
+            
+            <!--RESET BUTTON-->
+            <form id="Reset" action="javascript:void(0)">	
+                <input type="submit" value="Reset" tabindex="2" />
+            </form>
+
+            <!--TABLE-->
+            <div id="tablearea"></div>
+        </div>
+    </body>
+</html>

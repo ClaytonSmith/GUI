@@ -53,39 +53,39 @@ table{
 
 /*BACK GROUND AND FONTS*/
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  background-image: url("River_1.jpg"); /*Merrimack River Lowell image taken by me*/
-  line-height: 1.25;
-  padding: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("River_3.jpg"); /*Merrimack River Lowell image taken by me*/
+    line-height: 1.25;
+    padding: 15px;
 }
 /*END BACK GROUND AND FONTS*/
 
 /*HEADERS*/
 h1, h2, h3 {
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  background-color: black;
-  color: white;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
 
 h2 {
-  font-size: medium;
-  font-weight: normal;
+    font-size: medium;
+     font-weight: normal;
 }
 /*END HEADERS*/
 
 /*defualt paragraph font/color*/
 p {
-  font-size: small;
-  color: black;
+    font-size: small;
+    color: black;
 }
 /*END defualt paragraph font/color*/
 
 /*Student at University of Massachusetts Lowell 
 Computer Science Undergraduate STYLE*/
 #tagline p {
-  color: #ffffff;
-  font-style: italic;
-  font-family: Georgia, Times, serif;
+    color: #ffffff;
+    font-style: italic;
+    font-family: Georgia, Times, serif;
 }
 /*END Student at University of Massachusetts Lowell 
 Computer Science Undergraduate STYLE*/
@@ -107,8 +107,20 @@ Computer Science Undergraduate STYLE*/
     background: #b7aa87;
     width: 500px;
     border-radius: 25px;
+    float: left;
 }
 /*END ASSIGNMENT BOX STYLE*/
+
+/* ASSIGNMENT MENU BOX STYLE*/
+#Assignment_Menu {
+    border: 2px solid #a1a1a1;
+    padding: 10px 20px; 
+    background: #b7aa87;
+    width: 150px;
+    border-radius: 25px;
+    float: left;
+} 
+/*END ASSIGNMENT MENU BOX STYLE*/
 
 /*BACKUPS BOX STYLE*/
 #BackUps {
@@ -130,26 +142,25 @@ Computer Science Undergraduate STYLE*/
 }
 /*END TABLE INPUT BOX STYLE*/
 
-
 /*STYLES FOR LINKS*/
 a:link, a:visited {
-  color: greenyellow;
-  font-weight: bold;
+    color: greenyellow;
+    font-weight: bold;
 }
 
 a:visited {
-  color: green;
+    color: green;
 }
 
 a:hover {
-  text-decoration: none;
-  color: white;
-  background-color: navy;
+    text-decoration: none;
+    color: white;
+    background-color: navy;
 }
 
 a:active {
-  color: aqua;
-  background-color: navy;
+    color: aqua;
+    background-color: navy;
 }
 /*END STYLES FOR LINKS*/
 
@@ -177,10 +188,10 @@ ul#menu li a:hover {
 
 /* Assigment Json file properties */
 .AssignmentNumber, .AssignemtName, .Professor, .DateDue {
-  font-family: Helvetica, Arial, sans-serif ;
-  color: black ;
-  background-color: #b7aa87;
-  margin: 0 0 0 0 ;
+    font-family: Helvetica, Arial, sans-serif ;
+    color: black ;
+    background-color: #b7aa87;
+    margin: 0 0 0 0 ;
 }
 
 .Professor{

@@ -1,0 +1,13 @@
+  {
+    "AssignmentNumber" : "Assignment No. 2" ,
+    "AssignemtName" : "Creating Your First Web Paget" ,
+    "DateDue" : "Thursday, September 11, 2014" ,
+    "Professor" : "Jesse M. Heines",
+    "text" : {
+      "paragraphs": [
+        [
+          "In this assignment you will create your first web page.  That may sound easy, but there are a number of pieces involved in getting yourself and your account ready for the more complex assignments to follow.  To complete this assignment successfully, your first web page must be visible to everyone on the weblab.cs.uml.edu server."
+        ]
+      ]
+    }
+  }

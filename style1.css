@@ -66,6 +66,15 @@ Computer Science Undergraduate STYLE*/
 }
 /*END GREETINGS BOX STYLE*/
 
+/*GREETINGS BOX STYLE*/
+#Assignment_Menu {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 300px;
+    border-radius: 25px;
+}
+/*END GREETINGS BOX STYLE*/
 
 /*STYLES FOR LINKS*/
 a:link, a:visited {
@@ -114,4 +123,9 @@ ul#menu li a:hover {
 /*TABLE STYLE*/
 table{
    width:100%;
+}
+
+#content{
+    margin-left: 190px;
+    margin-top: 110px;
 }

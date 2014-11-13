@@ -1,0 +1,190 @@
+/* File:  MyFirstWebLabWebsite "style1.css"
+  91.461 Assignment 3:  Styling Your First Web Page With CSS
+  Mark S McGrotty, UMass Lowell Computer Science, mmcgrott@cs.uml.edu
+  Copyright (c) 2014 by Mark McGrotty.  All rights reserved.  May be freely 
+    copied or excerpted for educational purposes with credit to the author.
+  updated by  MSM on October 24, 2014 at 12:50 AM
+*/
+
+/* to display the generate and reset buttons on the same line*/
+form{
+    display: inline;
+}
+
+/*TABLE STYLES*/
+td{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+tr{
+    width: 50px;
+}
+
+
+tr:nth-child(1) {
+    background: #a9974e;
+
+}
+
+tr:nth-child(1) > td:nth-child(1){
+    background: #b7aa87;
+
+
+}
+td:nth-child(1) {
+    background: #a9974e;
+
+
+}
+
+table{
+    background: #b7aa87;
+    border: 1px solid black;
+    color: whitesmoke;
+    width:100%;
+    border-width: 5px;
+    padding: 10px;
+
+}
+/*END TABLE STYLES*/
+
+
+/*BACK GROUND AND FONTS*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("River_1.jpg"); /*Merrimack River Lowell image taken by me*/
+  line-height: 1.25;
+  padding: 15px;
+}
+/*END BACK GROUND AND FONTS*/
+
+/*HEADERS*/
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  font-size: medium;
+  font-weight: normal;
+}
+/*END HEADERS*/
+
+/*defualt paragraph font/color*/
+p {
+  font-size: small;
+  color: black;
+}
+/*END defualt paragraph font/color*/
+
+/*Student at University of Massachusetts Lowell 
+Computer Science Undergraduate STYLE*/
+#tagline p {
+  color: #ffffff;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+}
+/*END Student at University of Massachusetts Lowell 
+Computer Science Undergraduate STYLE*/
+
+/*GREETINGS BOX STYLE*/
+#Greeting {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 400px;
+    border-radius: 25px;
+}
+/*END GREETINGS BOX STYLE*/
+
+/*ASSIGNMENT BOX STYLE*/
+#Format_Text {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 500px;
+    border-radius: 25px;
+}
+/*END ASSIGNMENT BOX STYLE*/
+
+/*BACKUPS BOX STYLE*/
+#BackUps {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 500px;
+    border-radius: 25px;
+}
+/*BACKUPS BOX STYLE*/
+
+/*TABLE INPUT STYLE*/
+#times_table {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #b7aa87;
+    width: 500px;
+    border-radius: 25px;
+}
+/*END TABLE INPUT BOX STYLE*/
+
+
+/*STYLES FOR LINKS*/
+a:link, a:visited {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: navy;
+}
+
+a:active {
+  color: aqua;
+  background-color: navy;
+}
+/*END STYLES FOR LINKS*/
+
+/*STYLES FOR NAVIGATION MENU*/
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a { 
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: grey;
+}
+/*END STYLES FOR NAVIGATION MENU*/
+
+/* Assigment Json file properties */
+.AssignmentNumber, .AssignemtName, .Professor, .DateDue {
+  font-family: Helvetica, Arial, sans-serif ;
+  color: black ;
+  background-color: #b7aa87;
+  margin: 0 0 0 0 ;
+}
+
+.Professor{
+    font-style: italic;
+}
+/*End Assigment Json file properties*/
+

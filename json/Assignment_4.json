@@ -1,0 +1,26 @@
+  {
+    "AssignmentNumber" : "Assignment No. 4" ,
+    "AssignemtName" : "Posting a Page to GitHub" ,
+    "DateDue" : "Thursday, October 2, 2014" ,
+    "Professor" : "Jesse M. Heines",
+    "text" : {
+      "paragraphs": [
+        [
+          "This assignment is simple.  All you have to do is post a simple page to GitHub in such a way that we can view it in a browser.  The page content doesn't matter for this assignment, but it must be published using GitHub Pages.  Your URL will be:"
+        ],
+        [
+          "http://<your_user_name>.github.io/<your_repository_name>/<your_file_name>"
+          
+        ],
+        [
+          "For example, my version of this assignment is at:"
+        ] ,
+        [
+          "http://jheines.github.io/91461-2014-15f/j1.html"
+        ] ,
+        [
+          "To do this, you need to watch the video that Curran created and follow the steps that it outlines.  You will submit your github.io URL using the standard procedure, that is, the Assignment Submission Form.  The only difference is that you will be submitting a github.io URL instead of a weblab.cs.uml.edu URL.  (If you name your file index.html as in the video, you do not have to supply that file name, as it is the default.)"
+        ]
+      ]
+    }
+  }

@@ -1,0 +1,17 @@
+  {
+    "AssignmentNumber" : "Assignment No. 1" ,
+    "AssignemtName" : "Setting Up to Take This Course" ,
+    "DateDue" : "Tuesday, September 9, 2014" ,
+    "Professor" : "Jesse M. Heines",
+    "text" : {
+      "paragraphs": [
+        [
+          "This is not a graded assignment.  However, this assignment is critical because you need to have a local web server on your own system to do proper web development.  This write-up therefore leads you through installing XAMPP, a package that integrates a complete web development environment on either Windows or Macintosh systems.  The standard practice throughout this course will then be to do development on your own system and then upload your web pages to the CS server so that all of us -- me as your professor, our teaching assistant, and even other students -- can view your work."
+        ],
+        [
+          "It is critical that you do this assignment by our second class of the semester:  Tuesday, September 9, 2014.  That way, if you have problems, we will have time to address them before the second assignment is due, which will be just days after that.  Don’t procrastinate.  Get the semester off to a good start.  Install XAMPP over the weekend (if not sooner) to ensure that you have it up and running before our second class.  If you have problems, use the Piazza discussion forum to get help from your classmates, our teaching assistant, and me."
+          
+        ]
+      ]
+    }
+  }

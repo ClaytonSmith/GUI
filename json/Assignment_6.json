@@ -1,0 +1,20 @@
+  {
+    "AssignmentNumber" : "Assignment No. 6" ,
+    "AssignemtName" : "Creating an Interactive Dynamic Table" ,
+    "DateDue" : "Thursday, October 23, 2014" ,
+    "Professor" : "Jesse M. Heines",
+    "text" : {
+      "paragraphs": [
+        [
+          "This is the first assignment in which you must use JavaScript that you write yourself.  The next assignment will build off this one, so it is important that you write your code clearly in this one so that you can modify it for the next one.  The task itself is straightforward, but it has a lot of parts.  You will need to familiariarize yourself with a number of techniques needed to build this program and the debugging facilities available in you browser of choice."
+        ],
+        [
+          "For this assignment you will create a table completely dynamically based on parameters entered in an HTML form.  First, you must create a a form that accepts the starting and ending numbers for both the horizontal (multiplier) and vertical (multiplicand) axes of a multiplication table.  Second, you will use the numbers entered into the form to create a mulitplication table completely dynamically.  What you will create is commonly called a “single page web app” (or application)."
+          
+        ],
+        [
+          "Note that the numbers that go along the side of the table and those that go along the top (the multiplier and the multiplicand) are arbitrary.  The point of this assignment is for you to create a program that can display the table given any arbitrary starting and ending numbers for the multiplier and multiplicand.  The human factors part of this assignment is that there are many interesting things that can happen when users enter the four numbers, and we will discuss those in class."
+        ]
+      ]
+    }
+  }

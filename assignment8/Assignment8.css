@@ -1,0 +1,32 @@
+/*File:  Assignment 8 css "Assignment8.css"
+//91.461: Using the jQuery Validation Plugin and jQueryUI Tabbed Widget
+//Mark S McGrotty, UMass Lowell Computer Science, mmcgrott@cs.uml.edu
+//Copyright (c) 2014 by Mark McGrotty.  All rights reserved.  May be freely 
+//copied or excerpted for educational purposes with credit to the author.
+//updated by  MSM on Decmeber, 2014 at 2:50 PM*/
+
+/*Style for times table*/
+#times_table {
+    border: 2px solid #a1a1a1;
+    width : 360px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    float: left;
+}
+
+/*style for tabs*/
+#myTabs {
+    border: 2px solid #a1a1a1;
+    width : 720px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    float: left;
+} 
+
+/*style for table settings*/
+#settings {
+    border: 2px solid #a1a1a1;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    background-color: gainsboro;
+} 

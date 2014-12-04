@@ -1,0 +1,139 @@
+<!--
+File:  Assignment 8 "tabs.html"
+91.461: Using the jQuery Validation Plugin and jQueryUI Tabbed Widget
+Mark S McGrotty, UMass Lowell Computer Science, mmcgrott@cs.uml.edu
+Copyright (c) 2014 by Mark McGrotty.  All rights reserved.  May be freely 
+copied or excerpted for educational purposes with credit to the author.
+updated by  MSM on Decmeber, 2014 at 2:50 PM
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Dynamic Tabs</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--
+  File:  /~heines/91.461/91.461-2014-15f/461-lecs/code/DynamicTabs.html
+  Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
+  Copyright (c) 2014 by Jesse M. Heines.  All rights reserved.  May be freely 
+    copied or excerpted for educational purposes with credit to the author.
+  updated by JMH on November 14, 2014 at 9:10 PM
+-->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  
+  <!--Include CSS-->
+  <link href="Assignment8.css" rel="stylesheet" type="text/css">
+  
+  <!--Multiplication Table JavaScript-->
+  <script type="text/javascript" src="Assignment8.js"></script>  
+  
+  <!-- links to tabs functions -->
+  <script type="text/javascript" src="tabs.js"></script>
+  
+  <!--JQuery validation API-->
+  <script src="_js/jquery.validate.min.js"></script>
+  
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <script>
+            $(document).ready(function() {
+                $('#InValues').validate({
+                 rules: {
+                     Xmin: {
+                         required: true,
+                         range: [-20,20]
+                     },
+                     Xmax: {
+                         required: true,
+                         range: [-20,20]
+                     },
+                     Ymin: {
+                         required: true,
+                         range: [-20,20]
+                     },
+                     Ymax: {
+                         required: true,
+                         range: [-20,20]
+                     }                     
+                 },//end rules
+                 messages:{
+                     Xmin:{
+                         required:"Please input a value between -20 and 20"
+                     },
+                     Xmax:{
+                         required:"Please input a value between -20 and 20"
+                     },
+                     Ymin:{
+                         required:"Please input a value between -20 and 20"
+                     },
+                     Ymax:{
+                         required:"Please input a value between -20 and 20"
+                     }
+                 }
+             }); //end validate
+            }); // end ready
+        </script>
+
+</head>
+
+<body>
+  <h1>Dynamic Tabs</h1>
+
+
+  <!-- input matrix values -->
+        <div id="times_table">
+            
+            <h3>MULTIPLICATION TABLE</h3>
+            
+            <!-- INPUT X VALUES form-->
+            <h2>Input X Min and Max values</h2>
+            
+            <form action="javascript:void(0)" method="post" name="InValues" id="InValues">	
+               
+                
+                <p>Input X min</p>
+                <input type="number" name="Xmin" id="Xmin" value="0"
+                    min="-256" max="255" step="1"/>
+
+
+                <p>Input X max</p>                
+                <input  type="number" name="Xmax" id="Xmax" value="10"
+                    min="-256" max="255" step="1"/>
+                
+
+                <p>Input Y min</p>                
+                <input type="number" name="Ymin" id="Ymin" value="0"
+                    min="-256" max="255" step="1"/>
+
+                <p>Input Y max</p>                
+                <input type="number" name="Ymax" id="Ymax" value="10"
+                    min="-256" max="255" step="1"/>
+                      
+                    <input type="submit" name="submit" id="submit" value="Change Values">
+                    
+            <button class="add-tab">Add Table</button>
+            </form>
+            <!--X Values Output-->
+            <div id="settings">            
+                <p id="XValuesArea">X Minimum = 0 : X Maximum = 10</p>
+                <p id="YValuesArea">Y Minimum = 0 : Y Maximum = 10</p>
+            </div>
+
+
+
+        </div>
+        
+        <div id="myTabs">
+            <ul>
+
+            </ul>
+
+        </div>
+  
+        <div id="tablearea"></div>
+        
+        
+</body>
+</html>

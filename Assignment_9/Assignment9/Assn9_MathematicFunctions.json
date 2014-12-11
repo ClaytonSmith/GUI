@@ -2,7 +2,7 @@
 "RECORDS":[
 {
 "equation": "Pythagorean Theorem",
-"discoverer":" Pythagoras of Samos",
+"discoverer": "Pythagoras of Samos",
 "year_discovered": "570 BC",
 "comments":"Useful applications of this equation",
 "wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
@@ -12,7 +12,7 @@
 },
 {
 "equation": "Quadratic Formula",
-"discoverer":" Bob",
+"discoverer": "Bob",
 "year_discovered": "2050 BC to 1650 BC",
 "comments":"Useful applications of this equation",
 "wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
@@ -22,7 +22,7 @@
 },
 {
 "equation": "Fundamental Theorom of Calculus",
-"discoverer":" Smith",
+"discoverer": "Smith",
 "year_discovered": "120 BC",
 "comments":"Useful applications of this equation",
 "wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
@@ -32,7 +32,7 @@
 },
 {
 "equation": "Linear Equation",
-"discoverer":"Joe Shmoe",
+"discoverer": "Joe Shmoe",
 "year_discovered": "1444 AD",
 "comments":"Useful applications of this equation",
 "wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
@@ -42,7 +42,7 @@
 },
 {
 "equation": "Pythagorean Theorem",
-"discoverer":" Pythagoras of Samos",
+"discoverer": "Pythagoras of Samos",
 "year_discovered": "133 CE",
 "comments":"Useful applications of this equation",
 "wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",

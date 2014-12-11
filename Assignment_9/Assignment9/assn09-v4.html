@@ -5,14 +5,11 @@
   File:  Assignment9\assn09-v4.html
   Mark McGrotty, UMass Lowell Computer Science, mark_mcgrotty@student.uml.edu
   Copyright (c) 2014 by Jesse M. Heines.  All rights reserved.  May be freely 
-    copied or excerpted for educational purposes with credit to the author.
+  copied or excerpted for educational purposes with credit to the author.
   updated by MSM on November 29, 2014 at 3:29 PM
   
     
-   CODE BASED OFF HEINES SAMPLE CODE FOUND HERE: https://teaching.cs.uml.edu/~heines/91.461/91.461-2014-15f/461-assn/code/Assn09-Starter/jmh-assn09-v4.html
-   
-    
-
+  CODE BASED OFF HEINES SAMPLE CODE FOUND HERE: https://teaching.cs.uml.edu/~heines/91.461/91.461-2014-15f/461-assn/code/Assn09-Starter/jmh-assn09-v4.html   
 
   Note the need to name the SubmissionsApp in the html ng-app attribute above
   if we're going to use it in the angular.module function below.
@@ -141,7 +138,7 @@
         https://docs.angularjs.org/api/ng/filter/date 
     -->
     <p>
-      {{(jsonData.data.RECORDS).length}} submissions received as of 
+      {{(jsonData.data.RECORDS).length}} equations as of 
       {{dataFileCreationDate | date:"MMMM d, yyyy"}} at {{dataFileCreationDate | date:"h:mm a"}}.
     </p>
     
@@ -155,10 +152,11 @@
           <th ng-click="sortColumn(3)">Year of<br>Discovery</th>
           <th ng-click="sortColumn(4)">Equation</th>
           <th>Formula</th>                    
-          <th>Visual</th>          
+          <th>Visual</th>
+          <th>Useful<br>Applications</th>
           <th>Wolfram Alpha<br>Link</th>
           <th>Wikipedia<br>Link</th>          
-          <th>Useful<br>Applications</th>
+
 
         </tr>
       </thead>
@@ -185,44 +183,17 @@
           <td><img src={{oneSubmit.formatted_equation_image}} alt="Forumla Location"></td>
           
           <!--Display Visual of Equation-->
-          <td ng-bind-html="oneSubmit.visual | unsafe"></td>
+          <td><img src={{oneSubmit.visual}} alt="Visual of equation" height="120" width="200"></td>
           
-          <!-- FORMATTING THE SUBMISSION DATE -->
-          <!-- 
-            According to:
-              https://docs.angularjs.org/api/ng/filter/date
-            the following statement does not work because the AngularJS date filter needs
-            the date as a Date object, milliseconds (string or number), or various ISO 8601
-            datetime string formats (e.g., yyyy-MM-ddTHH:mm:ss.sssZ and its shorter
-            versions like yyyy-MM-ddTHH:mmZ, yyyy-MM-dd or yyyyMMddTHHmmssZ).
-              <td>{{oneSubmit.timestamp | date:"MMM d"}}</td>
-          -->
-          <!--
-            The following statement uses a custom filter to extract just the month and day
-            from the Java-style data string in the JSON file.
-          -->
-          <!-- <td>{{oneSubmit.timestamp | substring:4:11}}</td> -->
-          <!--
-            However, given that we have the number of milliseconds that the time stamp
-            represents, we can use the built-in AngularJS date filter on that.
-          -->
-
-
+          <!-- Applications of Equation-->
+          <td ng-bind-html="oneSubmit.comments | unsafe"></td>
+          
           <!-- MAKING THE WolfRam URL A LIVE, CLICKABLE LINK -->
           <td><a href="{{oneSubmit.wolfram_url}}" target="_blank">URL</a></td>
           
           <!-- MAKING THE Wikipedia URL A LIVE, CLICKABLE LINK -->
           <td><a href="{{oneSubmit.wikipedia_url}}" target="_blank">URL</a></td>
           
-          <!-- FORMATTING STUDENT COMMENTS AS TRUE HTML -->
-          <!-- 
-            The following statement outputs HTML without interpretation:
-              <td>{{oneSubmit.comments}}</td> 
-            To interpret the HTML tags in the output, use the syntax below, explained at:
-              http://creative-punch.net/2014/04/preserve-html-text-output-angularjs/
-          -->
-          <td ng-bind-html="oneSubmit.comments | unsafe"></td>
-
         </tr>
       </tbody>
     </table>

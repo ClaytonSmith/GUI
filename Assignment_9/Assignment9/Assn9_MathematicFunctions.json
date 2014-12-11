@@ -4,51 +4,41 @@
 "equation": "Pythagorean Theorem",
 "discoverer": "Pythagoras of Samos",
 "year_discovered": "570 BC",
-"comments":"Useful applications of this equation",
-"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
+"comments": "Used to calculate the missing side of a right triangle",
+"wolfram_url":"http://mathworld.wolfram.com/PythagoreanTheorem.html",
 "wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
-"visual":"Equation Images/Pythagoran_Theorem.png",
+"visual":"Equation images/Visuals/pytharea.jpg",
 "formatted_equation_image":"Equation Images/Pythagoran_Theorem.png"
 },
 {
 "equation": "Quadratic Formula",
-"discoverer": "Bob",
-"year_discovered": "2050 BC to 1650 BC",
-"comments":"Useful applications of this equation",
-"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
-"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
-"visual":"Put image path here",
+"discoverer": "Euclid",
+"year_discovered": "300 BC",
+"comments":"Used to find the roots of an equation",
+"wolfram_url":"http://mathworld.wolfram.com/QuadraticEquation.html",
+"wikipedia_url":"http://en.wikipedia.org/wiki/Quadratic_equation",
+"visual":"Equation images/Visuals/quadratic-function.JPG",
 "formatted_equation_image":"Equation Images/Quadratic_Equation.png"
 },
 {
-"equation": "Fundamental Theorom of Calculus",
-"discoverer": "Smith",
-"year_discovered": "120 BC",
-"comments":"Useful applications of this equation",
-"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
-"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
-"visual":"Put image path here",
+"equation": "Fundamental Theorem of Calculus",
+"discoverer": "James Gregory",
+"year_discovered": "1600 AD circa",
+"comments":"Links the concept of the derivative of a funtion with the concept of the integral",
+"wolfram_url":"http://mathworld.wolfram.com/FundamentalTheoremsofCalculus.html",
+"wikipedia_url":"http://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus",
+"visual":"Equation Images/Visuals/Riemann_integral_irregular.gif",
 "formatted_equation_image":"Equation Images/Fundamental_Theorem_of_Calculus.png"
 },
 {
 "equation": "Linear Equation",
-"discoverer": "Joe Shmoe",
-"year_discovered": "1444 AD",
-"comments":"Useful applications of this equation",
+"discoverer": "Unknown",
+"year_discovered": "1700 BC",
+"comments":"Used for modelling and graphing diffrent mathematic phenomenas",
 "wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
 "wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
-"visual":"Put image path here",
-"formatted_equation_image":"Equation Images/Quadratic_Equation.png"
-},
-{
-"equation": "Pythagorean Theorem",
-"discoverer": "Pythagoras of Samos",
-"year_discovered": "133 CE",
-"comments":"Useful applications of this equation",
-"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
-"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
-"visual":"Equation Images/Pythagoran_Theorem.png",
-"formatted_equation_image":"Equation Images/Pythagoran_Theorem.png"
+"visual":"Equation Images/Visuals/Linear_Function_Graph.png",
+"formatted_equation_image":"Equation Images/linear_equation.png"
 }
 ]
 }

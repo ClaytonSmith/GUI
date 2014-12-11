@@ -1,0 +1,54 @@
+{
+"RECORDS":[
+{
+"equation": "Pythagorean Theorem",
+"discoverer":" Pythagoras of Samos",
+"year_discovered": "570 BC",
+"comments":"Useful applications of this equation",
+"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
+"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
+"visual":"Equation Images/Pythagoran_Theorem.png",
+"formatted_equation_image":"Equation Images/Pythagoran_Theorem.png"
+},
+{
+"equation": "Quadratic Formula",
+"discoverer":" Bob",
+"year_discovered": "2050 BC to 1650 BC",
+"comments":"Useful applications of this equation",
+"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
+"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
+"visual":"Put image path here",
+"formatted_equation_image":"Equation Images/Quadratic_Equation.png"
+},
+{
+"equation": "Fundamental Theorom of Calculus",
+"discoverer":" Smith",
+"year_discovered": "120 BC",
+"comments":"Useful applications of this equation",
+"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
+"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
+"visual":"Put image path here",
+"formatted_equation_image":"Equation Images/Fundamental_Theorem_of_Calculus.png"
+},
+{
+"equation": "Linear Equation",
+"discoverer":"Joe Shmoe",
+"year_discovered": "1444 AD",
+"comments":"Useful applications of this equation",
+"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
+"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
+"visual":"Put image path here",
+"formatted_equation_image":"Equation Images/Quadratic_Equation.png"
+},
+{
+"equation": "Pythagorean Theorem",
+"discoverer":" Pythagoras of Samos",
+"year_discovered": "133 CE",
+"comments":"Useful applications of this equation",
+"wolfram_url":"http://www.wolframalpha.com/input/?i=a%5E2%2Bb%5E2%3Dc%5E2&lk=4&num=2",
+"wikipedia_url":"http://en.wikipedia.org/wiki/Pythagorean_theorem",
+"visual":"Equation Images/Pythagoran_Theorem.png",
+"formatted_equation_image":"Equation Images/Pythagoran_Theorem.png"
+}
+]
+}

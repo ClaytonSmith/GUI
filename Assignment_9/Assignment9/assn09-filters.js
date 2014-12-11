@@ -1,4 +1,4 @@
-/*  File:  Assignment9\jmh-assn09-filters.js
+/*  File:  Assignment9\assn09-filters.js
  *  Mark McGrotty, UMass Lowell Computer Science, mark_mcgrotty@student.uml.edu
  *  Copyright (c) 2014 by Mark S. McGrotty  All rights reserved.  May be freely 
  *    copied or excerpted for educational purposes with credit to the author.

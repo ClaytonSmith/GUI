@@ -1,10 +1,13 @@
-/*  File:  D:\H-Drive\91-461\461-2014-15f\assn09\MySolution\jmh-utilities.js
- *  Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
- *  Copyright (c) 2014 by Jesse M. Heines.  All rights reserved.  May be freely 
+/*  File:  Assignment9\utilities.js
+ * 
+ * CODE DEVELOPED BY PROF. HEINES, SAMPLE CODE FOUND HERE: https://teaching.cs.uml.edu/~heines/91.461/91.461-2014-15f/461-assn/code/Assn09-Starter/jmh-assn09-v4.html
+ * 
+ *  Mark McGrotty, UMass Lowell Computer Science, mark_mcgrotty@student.uml.edu
+ *  Copyright (c) 2014 by Mark S. McGrotty  All rights reserved.  May be freely 
  *    copied or excerpted for educational purposes with credit to the author.
- *  updated by JMH on November 28, 2014 at 8:27 AM
+ *  updated by MSM on November 28, 2014 at 9:18 AM
  */
- 
+
 
 "use strict" ;  // to ensure that all variables are declared before use
 

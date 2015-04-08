@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
 
-  var Womb                = require( 'Womb/Womb'                  );
+  var Womb                = require( 'GUI/Womb/Womb'                  );
   
   var m                   = require( 'Utils/Math'                 );
   var recursiveFunctions  = require( 'Utils/RecursiveFunctions'   );
@@ -23,9 +23,9 @@ define(function(require, exports, module) {
   var link = 'http://soundcloud.com/holyother';
   var info =  "Drag to spin, scroll to zoom,<br/> press 'x' to hide interface";
   
-  womb = new Womb({
+  womb = new Womb({ //Top Left Text
     cameraController: 'TrackballControls',
-    title:            'Holy Other - We Over',
+    title:            'Visono',
     link:             link, 
     summary:          info,
     color:            '#000000',
@@ -33,42 +33,44 @@ define(function(require, exports, module) {
     size:             400
   });
 
+    //select MP3
+  womb.stream = womb.audioController.createStream( '/lib/audio/tracks/02 - Days to come (feat. Bajka).mp3' );
 
-  womb.stream = womb.audioController.createStream( '/lib/audio/tracks/Woodkid -- Iron ( Bluwi Cover ) The Marmalade Identity Soundtrack.mp3' );
 
+//Particle System Settings
   womb.ps = new PhysicsSimulator( womb , {
-
-    textureWidth: 300,
-    debug: false,
+    
+    textureWidth: 100, //amount of particles created per update?
+    debug: false,//6 oddly colored squares appear on screen
     velocityShader: physicsShaders.velocity.curl,
-    velocityStartingRange:.0000,
-    startingPositionRange:[1 , .000002, 0 ],
+    velocityStartingRange:1, //doesnt'
+    startingPositionRange:[1 , .000002, 0 ], //spawn area for particles? [width, height, depth]
     positionShader: physicsShaders.positionAudio_4,
     particlesUniforms:        physicsParticles.uniforms.audio,
     particlesVertexShader:    physicsParticles.vertex.audio,
     particlesFragmentShader:  physicsParticles.fragment.audio,
 
-    bounds: 100,
-    speed: .1,
+    bounds: 100, //width of particle spawn, affects particle density
+    speed: .1, //speed of particles
     particleParams:   {
-        size: 25,
-        sizeAttenuation: true,
-        blending: THREE.AdditiveBlending,
-        depthWrite: false,
-        transparent: true,
-        fog: true, 
-        map: THREE.ImageUtils.loadTexture( '/lib/img/particles/lensFlare.png' ),
+        size: 25, //size of particles
+        sizeAttenuation: true, // no clue
+        blending: THREE.AdditiveBlending,//Types of blending refer to http://threejs.org/examples/#webgl_materials_blending for more options
+        depthWrite: false,//turns particles into bubbles?
+        transparent: true,//transparancy, particles become sprite like(2d circles)
+        fog: true, //I don't see any difference between true or false
+        map: THREE.ImageUtils.loadTexture( '/lib/img/particles/weirdBall.jpg' ),//texture for particles
         opacity:    1,
       }, 
     audio: womb.stream
 
   });
   
-  womb.u = {
+  womb.u = {//nothiing noticible
 
     texture:    { type: "t", value: womb.stream.texture.texture },
     image:      { type: "t", value: womb.stream.texture.texture },
-    color:      { type: "v3", value: new THREE.Vector3( .3 , .01 , .1 ) },
+    color:      { type: "v3", value: new THREE.Vector3( .3 , .01 , .1 ) },//Nothing noticible
     time:       womb.time,
     pow_noise:  { type: "f" , value: 0.2 },
     pow_audio:  { type: "f" , value: .3 },
@@ -77,12 +79,12 @@ define(function(require, exports, module) {
 
  
 
-  womb.loader.loadBarAdd();
+  womb.loader.loadBarAdd();//loads visualizer
   
   womb.start = function(){
 
-    womb.stream.play();
-    womb.ps.enter();
+    womb.stream.play();//stream music
+    womb.ps.enter();//start particle system needs music to be streaming to work
 
   }
 

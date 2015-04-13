@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
 
-  var Womb                = require( 'GUI/Womb/Womb'                  );
+  var Womb                = require( 'Womb/Womb'                  );
   
   var m                   = require( 'Utils/Math'                 );
   var recursiveFunctions  = require( 'Utils/RecursiveFunctions'   );

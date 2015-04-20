@@ -14,7 +14,7 @@ define(function(require, exports, module) {
   var physicsParticles    = require( 'Shaders/physicsParticles'   );
   
   var PhysicsSimulator    = require( 'Species/PhysicsSimulator'   );
-
+  var title = "DEFUALT";
   /*
    
      Create our womb
@@ -23,9 +23,23 @@ define(function(require, exports, module) {
   var link = 'http://soundcloud.com/holyother';
   var info =  "Drag to spin, scroll to zoom,<br/> press 'x' to hide interface";
   
+   var VisSettings;
+
+      jQuery.ajax({
+        async: false,
+        dataType: "json",
+        url: "jsontest.json" ,
+        success: function( data ) {
+          VisSettings = data ;
+        }
+      });
+      
+      jQuery(document).ready( function() {
+      } ) ;
+  
   womb = new Womb({ //Top Left Text
     cameraController: 'TrackballControls',
-    title:            'Visono',
+    title:            VisSettings.SongName,
     link:             link, 
     summary:          info,
     color:            '#000000',
@@ -34,7 +48,7 @@ define(function(require, exports, module) {
   });
 
     //select MP3
-  womb.stream = womb.audioController.createStream( '/lib/audio/tracks/02 - Days to come (feat. Bajka).mp3' );
+  womb.stream = womb.audioController.createStream( VisSettings.MP3 );
 
 
 //Particle System Settings
@@ -53,13 +67,13 @@ define(function(require, exports, module) {
     bounds: 100, //width of particle spawn, affects particle density
     speed: .1, //speed of particles
     particleParams:   {
-        size: 25, //size of particles
-        sizeAttenuation: true, // no clue
+        size: VisSettings.particleParams.size, //size of particles
+        sizeAttenuation: VisSettings.particleParams.sizeAttenuation, // no clue
         blending: THREE.AdditiveBlending,//Types of blending refer to http://threejs.org/examples/#webgl_materials_blending for more options
         depthWrite: false,//turns particles into bubbles?
-        transparent: true,//transparancy, particles become sprite like(2d circles)
+        transparent: VisSettings.particleParams.transparent,//transparancy, particles become sprite like(2d circles)
         fog: true, //I don't see any difference between true or false
-        map: THREE.ImageUtils.loadTexture( '/lib/img/particles/weirdBall.jpg' ),//texture for particles
+        map: THREE.ImageUtils.loadTexture( VisSettings.particleParams.map ),//texture for particles
         opacity:    1,
       }, 
     audio: womb.stream

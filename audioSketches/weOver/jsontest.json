@@ -1,0 +1,22 @@
+  {
+    "SongName" : "Bonobo - Towers (Ft. Szjerdene)" ,
+    "MP3" : "/lib/audio/tracks/07 Bonobo - Towers (Ft. Szjerdene).mp3" ,
+    "textureWidth":"100",
+    "velocityShader": "physicsShaders.velocity.curl",
+    "velocityStartingRange":"1",
+    "startingPositionRange":"[1 , .000002, 0 ]",
+    "positionShader": "physicsShaders.positionAudio_4",
+    "particlesUniforms":        "physicsParticles.uniforms.audio",
+    "particlesVertexShader":    "physicsParticles.vertex.audio",
+    "particlesFragmentShader":  "physicsParticles.fragment.audio",
+     "particleParams":   {
+        "size": "50", 
+        "sizeAttenuation": "true", 
+        "blending": "THREE.AdditiveBlending",
+        "depthWrite": "false",
+        "transparent": "true",
+        "fog": "true",
+        "map": "/lib/img/particles/weirdBall.jpg",
+        "opacity": "1"
+      }
+  }
